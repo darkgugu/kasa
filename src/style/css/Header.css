@@ -1,0 +1,17 @@
+body {
+  margin: 30px 50px;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*     margin: 0 50px;
+   */
+}
+nav a {
+  color: #FF6060;
+  text-decoration: none;
+  padding: 20px;
+}
