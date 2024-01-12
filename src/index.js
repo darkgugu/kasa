@@ -6,6 +6,7 @@ import Logements from './pages/Logements'
 import Propos from './pages/Propos'
 import Error from './pages/Error'
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 ReactDOM.render(
 	<React.StrictMode>
@@ -17,6 +18,7 @@ ReactDOM.render(
 				<Route path="/propos" element={<Propos></Propos>}></Route>
 				<Route path="*" element={<Error></Error>}></Route>
 			</Routes>
+			<Footer />
 		</Router>
 	</React.StrictMode>,
 	document.getElementById('root'),
