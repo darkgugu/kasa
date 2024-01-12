@@ -2,12 +2,16 @@
 
 $main-color: #FF6060;
 
-
-
 //Body
 
 body{
-    margin: 30px 50px;
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
+//Mixin
+
+@mixin body-margin{
+    margin-left: 50px;
+    margin-right: 50px;
+}
