@@ -1,0 +1,28 @@
+@import "./partials/common";
+
+.card{
+    width: 28%;
+    aspect-ratio: 1 / 1;
+    background-color: $main-color;
+    display: flex;
+    align-items: flex-end;
+    margin: 50px 10px;
+    text-decoration: none;
+    color: black;
+    border-radius: 15px;
+    position: relative;
+
+    p{
+        position: absolute;
+        z-index: 2;
+        margin: 30px;
+        width: 33%;
+    }
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+}
