@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Home {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.Home .card-container {
+  width: 100%;
+  min-height: 830px;
+  margin-bottom: 30px;
+  background-color: #F6F6F6;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

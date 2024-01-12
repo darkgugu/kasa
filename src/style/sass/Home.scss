@@ -1,0 +1,17 @@
+@import "./partials/common";
+
+.Home{
+    @include body-margin();
+
+    .card-container{
+        width: 100%;
+        min-height: 830px;
+        margin-bottom: 30px;
+        background-color: #F6F6F6;
+        border-radius: 15px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
