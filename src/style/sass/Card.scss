@@ -8,16 +8,9 @@
     align-items: flex-end;
     margin: 50px 10px;
     text-decoration: none;
-    color: black;
+    color: white;
     border-radius: 15px;
     position: relative;
-
-    p{
-        position: absolute;
-        z-index: 2;
-        margin: 30px;
-        width: 33%;
-    }
 
     img{
         height: 100%;
@@ -25,4 +18,22 @@
         object-fit: cover;
         border-radius: 15px;
     }
+
+    div{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 3;
+        border-radius: 15px;
+        background: linear-gradient(rgba(255,255, 255, 0), rgba(0, 0, 0, .4));
+    }
+
+    p{
+        position: absolute;
+        z-index: 3;
+        margin: 30px;
+        width: 33%;
+    }
+
+
 }
