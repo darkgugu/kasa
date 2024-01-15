@@ -1,0 +1,35 @@
+@import "./partials/common";
+
+.Collapse{
+
+    width: 50%;
+
+    .title{
+        background-color: $main-color;
+        border-radius: 10px;
+        font-size: 24px;
+        color: white;
+        padding: 12px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        img{
+            transition: transform 500ms;
+        }
+
+        .anim{
+            transform: rotate(-180deg);
+        }
+    }
+
+    .content{
+        background-color: #F6F6F6;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-size: 18px;
+        color: $main-color;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Collapse {
+  width: 50%;
+}
+.Collapse .title {
+  background-color: #FF6060;
+  border-radius: 10px;
+  font-size: 24px;
+  color: white;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Collapse .title img {
+  transition: transform 500ms;
+}
+.Collapse .title .anim {
+  transform: rotate(-180deg);
+}
+.Collapse .content {
+  background-color: #F6F6F6;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 18px;
+  color: #FF6060;
+  padding: 20px;
+}
