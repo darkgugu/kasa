@@ -1,12 +1,13 @@
 import '../style/css/Banner.css'
-import banner from '../assets/banner_image.png'
+import homeBanner from '../assets/banner_image.png'
+import proposBanner from '../assets/banner_image2.png'
 
-function Banner() {
+function Banner({ isHome }) {
 	return (
 		<div className="banner-container">
-			<img src={banner} alt="banner" />
+			<img src={isHome ? homeBanner : proposBanner} alt="banner" />
+			{isHome ? <p>Chez vous, partout et ailleurs</p> : null}
 			<div></div>
-			<p>Chez vous, partout et ailleurs</p>
 		</div>
 	)
 }
