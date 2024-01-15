@@ -7,7 +7,8 @@ function Propos() {
 		<div className="Propos">
 			<Banner />
 			<div>
-				<Collapse />
+				<Collapse id={0} />
+				<Collapse id={1} />
 			</div>
 		</div>
 	)

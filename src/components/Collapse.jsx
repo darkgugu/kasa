@@ -2,15 +2,19 @@ import '../style/css/Collapse.css'
 import chevron from '../assets/chevron.png'
 import { useState } from 'react'
 
-function Collapse() {
+function Collapse({ id }) {
 	const [isOpen, setIsOpen] = useState(false)
 
 	function clickChevron(state) {
-		const chevronElement = document.getElementById('chevron')
+		const chevronElement = document.getElementById(`chevron${id}`)
+		const contentElement = document.getElementById(`content${id}`)
 		if (state) {
 			chevronElement.className = 'anim'
+
+			contentElement.className = 'content anim-container'
 		} else {
 			chevronElement.className = ''
+			contentElement.className = 'content'
 		}
 		setIsOpen(state)
 	}
@@ -25,15 +29,17 @@ function Collapse() {
 					onClick={() => {
 						clickChevron(!isOpen)
 					}}
-					id="chevron"
+					id={`chevron${id}`}
 				/>
 			</div>
-			{isOpen ? (
-				<div className="content">
-					Les annonces postées sur Kasa garantissent une fiabilité
-					totale. Les photos sont conformes aux logements, et toutes
-					les informations sont régulièrement vérifiées par nos
-					équipes
+			{true ? (
+				<div id={`content${id}`} className="content">
+					<p>
+						Les annonces postées sur Kasa garantissent une fiabilité
+						totale. Les photos sont conformes aux logements, et
+						toutes les informations sont régulièrement vérifiées par
+						nos équipes
+					</p>
 				</div>
 			) : null}
 		</div>
