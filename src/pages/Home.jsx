@@ -3,12 +3,10 @@ import Card from '../components/Card'
 import '../style/css/Home.css'
 import data from '../assets/logements.json'
 
-console.log(data)
-
 function Home() {
 	return (
 		<div className="Home">
-			<Banner />
+			<Banner isHome={true} />
 			<div className="card-container">
 				{data.map((logement) => (
 					<Card
