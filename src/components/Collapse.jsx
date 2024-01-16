@@ -10,7 +10,6 @@ function Collapse({ id }) {
 		const contentElement = document.getElementById(`content${id}`)
 		if (state) {
 			chevronElement.className = 'anim'
-
 			contentElement.className = 'content anim-container'
 		} else {
 			chevronElement.className = ''

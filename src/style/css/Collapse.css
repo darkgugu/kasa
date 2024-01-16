@@ -4,7 +4,9 @@ body {
 }
 
 .Collapse {
+  overflow: hidden;
   width: 50%;
+  margin: 15px;
 }
 .Collapse .title {
   background-color: #FF6060;
@@ -31,8 +33,7 @@ body {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   font-size: 18px;
-  transform: translate(0, -150px);
-  opacity: 0;
+  transform: translate(0, -50px);
   height: 0;
   padding: 0;
   transition: transform 1000ms cubic-bezier(0.69, 1.13, 0.43, 0.89), opacity 250ms 250ms;
@@ -40,11 +41,10 @@ body {
 .Collapse .content p {
   margin: 0;
   height: 0;
-  color: white;
+  padding: 0 10px;
 }
 .Collapse .anim-container {
   transform: translate(0);
-  opacity: 1;
   margin: auto;
   height: auto;
   padding: 20px;
@@ -52,5 +52,6 @@ body {
 .Collapse .anim-container p {
   margin: auto;
   height: auto;
+  padding: 0;
   color: #FF6060;
 }
