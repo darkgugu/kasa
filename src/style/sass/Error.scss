@@ -1,0 +1,27 @@
+@import "./partials/common";
+
+.Error{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $main-color;
+    //margin: 50px;
+
+    & > * {
+        margin: 50px;
+    }
+
+    div{
+        font-size: 290px;
+    }
+
+    p{
+        font-size: 36px;
+    }
+
+    a{
+        text-decoration: underline;
+        color: $main-color
+    }
+}

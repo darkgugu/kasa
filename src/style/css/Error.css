@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FF6060;
+}
+.Error > * {
+  margin: 50px;
+}
+.Error div {
+  font-size: 290px;
+}
+.Error p {
+  font-size: 36px;
+}
+.Error a {
+  text-decoration: underline;
+  color: #FF6060;
+}
