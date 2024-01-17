@@ -2,7 +2,7 @@ import '../style/css/Collapse.css'
 import chevron from '../assets/chevron.png'
 import { useState } from 'react'
 
-function Collapse({ id }) {
+function Collapse({ id, title, content }) {
 	const [isOpen, setIsOpen] = useState(false)
 
 	function clickChevron(state) {
@@ -21,7 +21,7 @@ function Collapse({ id }) {
 	return (
 		<div className="Collapse">
 			<div className="title">
-				Titre du collapse
+				{title}
 				<img
 					src={chevron}
 					alt=""
@@ -31,16 +31,9 @@ function Collapse({ id }) {
 					id={`chevron${id}`}
 				/>
 			</div>
-			{true ? (
-				<div id={`content${id}`} className="content">
-					<p>
-						Les annonces postées sur Kasa garantissent une fiabilité
-						totale. Les photos sont conformes aux logements, et
-						toutes les informations sont régulièrement vérifiées par
-						nos équipes
-					</p>
-				</div>
-			) : null}
+			<div id={`content${id}`} className="content">
+				<p>{content}</p>
+			</div>
 		</div>
 	)
 }
