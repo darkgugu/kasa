@@ -1,0 +1,37 @@
+.Slideshow{
+
+
+    .container{
+        position: relative;
+        z-index: 0;
+        border-radius: 15px;
+        height: 450px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .arrows{
+        position: absolute;
+        background-color: rgba($color: black, $alpha: .3);
+    }
+
+    .image{
+        width: 100%;
+        height: 100%;
+        border-radius: 50px;
+        object-fit: cover;
+    }
+
+    #arrow-right{
+        right: 0;
+    }
+
+    p{
+        position: absolute;
+        color: white;
+        font-size: 18px;
+        left: 50%;
+        bottom: 0;
+    }
+}

@@ -14,7 +14,7 @@ ReactDOM.render(
 			<Header />
 			<Routes>
 				<Route path="/" element={<Home></Home>}></Route>
-				<Route path="/logements" element={<Logements />}></Route>
+				<Route path="/logements/:id" element={<Logements />}></Route>
 				<Route path="/propos" element={<Propos></Propos>}></Route>
 				<Route path="*" element={<Error></Error>}></Route>
 			</Routes>
