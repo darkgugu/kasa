@@ -6,4 +6,52 @@ body {
 .Logements {
   margin-left: 50px;
   margin-right: 50px;
+  color: #FF6060;
+}
+.Logements .title-container h1 {
+  font-weight: 500;
+  margin: 0;
+}
+.Logements .title-container p {
+  margin: 5px 0;
+}
+.Logements .host {
+  display: flex;
+}
+.Logements .host > * {
+  margin-left: 15px;
+}
+.Logements .host img {
+  border-radius: 50px;
+  width: 64px;
+  height: 64px;
+}
+.Logements .host div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Logements .host p {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin: 2px 0;
+  font-size: 18px;
+}
+.Logements .tag-container {
+  display: flex;
+}
+.Logements .tag-container div {
+  color: white;
+  background-color: #FF6060;
+  border-radius: 11px;
+  padding: 6px 20px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.Logements .top-div, .Logements .bottom-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
 }
