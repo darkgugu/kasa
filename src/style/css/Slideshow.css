@@ -9,6 +9,7 @@
 }
 .Slideshow .arrows {
   position: absolute;
+  cursor: pointer;
 }
 .Slideshow .image {
   width: 100%;
