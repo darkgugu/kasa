@@ -20,7 +20,7 @@ function Slideshow({ pictures }) {
 		<div className="Slideshow">
 			{pictures.map((image, index) =>
 				index === currentImage ? (
-					<div className="container">
+					<div key={index} className="container">
 						<img src={image} alt="" className="image" />
 						{pictures.length !== 1 ? (
 							<React.Fragment>

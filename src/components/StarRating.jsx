@@ -7,8 +7,8 @@ function StarRating({ rating }) {
 	const starArray = []
 	for (let i = 0; i < starNumber; i++) {
 		i < rating
-			? starArray.push(<img src={redStar} alt="filled star" />)
-			: starArray.push(<img src={whiteStar} alt="empty star" />)
+			? starArray.push(<img key={i} src={redStar} alt="filled star" />)
+			: starArray.push(<img key={i} src={whiteStar} alt="empty star" />)
 	}
 
 	return <div className="StarRating">{starArray}</div>
