@@ -49,6 +49,11 @@ body {
   font-size: 14px;
   margin-right: 10px;
 }
+.Logements .collapse-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 8%;
+}
 .Logements .top-div, .Logements .bottom-div {
   display: flex;
   justify-content: space-between;
