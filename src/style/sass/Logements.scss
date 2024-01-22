@@ -56,7 +56,9 @@
     }
 
     .collapse-container{
-        
+        display: flex;
+        justify-content: space-between;
+        gap: 8%;
     }
 
     .top-div, .bottom-div{
