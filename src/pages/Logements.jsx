@@ -1,16 +1,35 @@
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import Slideshow from '../components/Slideshow'
 import dataAll from '../assets/logements.json'
 import '../style/css/Logements.css'
 import StarRating from '../components/StarRating'
 import Collapse from '../components/Collapse'
+import { useEffect } from 'react'
 
 function Logements() {
 	const { id } = useParams()
-	const data = dataAll.filter((element) => element.id === id)[0]
+	const navigate = useNavigate()
 
-	console.log(data)
-	return (
+	let data = dataAll.filter((element) => element.id === id)[0]
+
+	useEffect(() => {
+		if (data === undefined) {
+			navigate('/404')
+		}
+	})
+
+	let equipArray = []
+
+	if (data !== undefined) {
+		equipArray = data.equipments.map((equipement, index) => (
+			<span key={index}>
+				{equipement}
+				<br />
+			</span>
+		))
+	}
+
+	return data !== undefined ? (
 		<div className="Logements">
 			<Slideshow pictures={data.pictures} />
 			<div>
@@ -29,8 +48,8 @@ function Logements() {
 				</div>
 				<div className="bottom-div">
 					<div className="tag-container">
-						{data.tags.map((tag) => (
-							<div>{tag}</div>
+						{data.tags.map((tag, index) => (
+							<div key={index}>{tag}</div>
 						))}
 					</div>
 
@@ -40,11 +59,15 @@ function Logements() {
 				</div>
 			</div>
 			<div className="collapse-container">
-				<Collapse id={0} title="Description" content="test" />
-				<Collapse id={1} title="Description" content="test" />
+				<Collapse
+					id={0}
+					title="Description"
+					content={data.description}
+				/>
+				<Collapse id={1} title="Équipements" content={equipArray} />
 			</div>
 		</div>
-	)
+	) : null
 }
 
 export default Logements
