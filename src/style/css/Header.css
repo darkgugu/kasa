@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 nav {
@@ -13,6 +14,7 @@ nav a {
   color: #FF6060;
   text-decoration: none;
   padding: 20px;
+  font-size: 22px;
 }
 @media (max-width: 426px) {
   nav {
