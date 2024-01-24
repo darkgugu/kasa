@@ -8,5 +8,8 @@
 
     .container{
         width: 75%;
+        @media (max-width: $bp-mobile) {
+            width: 100%;
+        }
     }
 }

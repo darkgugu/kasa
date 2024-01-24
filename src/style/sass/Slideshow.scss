@@ -1,10 +1,11 @@
+@import "./partials/common";
+
 .Slideshow{
 
 
     .container{
         position: relative;
         z-index: 0;
-        border-radius: 15px;
         height: 450px;
         width: 100%;
         display: flex;
@@ -33,5 +34,24 @@
         font-size: 18px;
         left: 50%;
         bottom: 0;
+    }
+
+    @media (max-width: $bp-mobile) {
+        .container{
+            height: 255px;
+        }
+
+        .image{
+            border-radius: 15px;
+        }
+
+        .arrows{
+            height: 30px;
+            padding: 5px;
+        }
+
+        p{
+            display: none;
+        }
     }
 }

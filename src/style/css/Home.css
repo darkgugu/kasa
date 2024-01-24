@@ -7,6 +7,11 @@ body {
   margin-left: 50px;
   margin-right: 50px;
 }
+@media (max-width: 426px) {
+  .Home {
+    margin: auto 20px auto 20px;
+  }
+}
 .Home .card-container {
   width: 100%;
   min-height: 830px;
@@ -16,4 +21,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+@media (max-width: 426px) {
+  .Home .card-container {
+    background-color: rgba(255, 255, 255, 0);
+  }
 }

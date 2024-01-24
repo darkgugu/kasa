@@ -13,5 +13,9 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+
+        @media (max-width: $bp-mobile) {
+            background-color: rgba($color: white, $alpha: 0.0);
+        }
     }
 }

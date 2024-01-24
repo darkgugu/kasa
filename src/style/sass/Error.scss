@@ -14,14 +14,28 @@
 
     div{
         font-size: 290px;
+        font-weight: 700;
     }
 
     p{
         font-size: 36px;
+        text-align: center;
     }
 
     a{
         text-decoration: underline;
-        color: $main-color
+        color: $main-color;
+        font-size: 14px;
+    }
+
+    @media (max-width: $bp-mobile) {
+        div{
+            font-size: 96px;
+        }
+        p{
+            font-size: 18px;
+        }
+
+        
     }
 }

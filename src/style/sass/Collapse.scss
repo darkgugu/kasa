@@ -58,4 +58,14 @@
             color: $main-color;
         }
     }
+
+    @media (max-width: $bp-mobile) {
+        margin: 25px auto;
+        .title{
+            font-size: 13px;
+        }
+        .content{
+            font-size: 13px;
+        }
+    }
 }

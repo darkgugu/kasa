@@ -36,3 +36,9 @@ body {
   margin: 30px;
   width: 33%;
 }
+@media (max-width: 426px) {
+  .card {
+    width: 100%;
+    margin: 10px 0px;
+  }
+}

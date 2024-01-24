@@ -14,11 +14,22 @@ body {
 }
 .Error div {
   font-size: 290px;
+  font-weight: 700;
 }
 .Error p {
   font-size: 36px;
+  text-align: center;
 }
 .Error a {
   text-decoration: underline;
   color: #FF6060;
+  font-size: 14px;
+}
+@media (max-width: 426px) {
+  .Error div {
+    font-size: 96px;
+  }
+  .Error p {
+    font-size: 18px;
+  }
 }
