@@ -7,7 +7,6 @@ function Banner({ isHome }) {
 		<div className="banner-container">
 			<img src={isHome ? homeBanner : proposBanner} alt="banner" />
 			{isHome ? <p>Chez vous, partout et ailleurs</p> : null}
-			<div></div>
 		</div>
 	)
 }
