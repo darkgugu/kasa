@@ -32,12 +32,19 @@ function Logements() {
 	return data !== undefined ? (
 		<div className="Logements">
 			<Slideshow pictures={data.pictures} />
-			<div>
-				<div className="top-div">
+			<div className="logement-container">
+				<div className="left-div">
 					<div className="title-container">
 						<h1>{data.title}</h1>
 						<p>{data.location}</p>
 					</div>
+					<div className="tag-container">
+						{data.tags.map((tag, index) => (
+							<div key={index}>{tag}</div>
+						))}
+					</div>
+				</div>
+				<div className="right-div">
 					<div className="host">
 						<div>
 							<p>{data.host.name.split(' ')[0]}</p>
@@ -45,15 +52,7 @@ function Logements() {
 						</div>
 						<img src={data.host.picture} alt="host portrait" />
 					</div>
-				</div>
-				<div className="bottom-div">
-					<div className="tag-container">
-						{data.tags.map((tag, index) => (
-							<div key={index}>{tag}</div>
-						))}
-					</div>
-
-					<div>
+					<div className="stars-container">
 						<StarRating rating={data.rating} />
 					</div>
 				</div>

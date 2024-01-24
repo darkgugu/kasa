@@ -8,55 +8,118 @@ body {
   margin-right: 50px;
   color: #FF6060;
 }
-.Logements .title-container h1 {
+@media (max-width: 426px) {
+  .Logements {
+    margin: auto 20px auto 20px;
+  }
+}
+.Logements .logement-container {
+  display: flex;
+  justify-content: space-between;
+}
+.Logements .logement-container .left-div, .Logements .logement-container .right-div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 10px;
+}
+.Logements .logement-container .left-div > *, .Logements .logement-container .right-div > * {
+  padding-top: 10px;
+}
+.Logements .logement-container .right-div {
+  align-items: flex-end;
+}
+.Logements .logement-container .title-container h1 {
   font-weight: 500;
   margin: 0;
 }
-.Logements .title-container p {
+.Logements .logement-container .title-container p {
   margin: 5px 0;
 }
-.Logements .host {
+.Logements .logement-container .host {
   display: flex;
 }
-.Logements .host > * {
+.Logements .logement-container .host > * {
   margin-left: 15px;
 }
-.Logements .host img {
+.Logements .logement-container .host img {
   border-radius: 50px;
   width: 64px;
   height: 64px;
 }
-.Logements .host div {
+.Logements .logement-container .host div {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.Logements .host p {
+.Logements .logement-container .host p {
   display: flex;
   flex-direction: column;
   text-align: right;
   margin: 2px 0;
   font-size: 18px;
 }
-.Logements .tag-container {
+.Logements .logement-container .tag-container {
   display: flex;
+  flex-wrap: wrap;
 }
-.Logements .tag-container div {
+.Logements .logement-container .tag-container div {
   color: white;
   background-color: #FF6060;
   border-radius: 11px;
   padding: 6px 20px;
   font-size: 14px;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 .Logements .collapse-container {
   display: flex;
   justify-content: space-between;
   gap: 8%;
 }
-.Logements .top-div, .Logements .bottom-div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 30px;
+@media (max-width: 426px) {
+  .Logements .logement-container {
+    flex-direction: column;
+  }
+  .Logements .logement-container .right-div {
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 0;
+  }
+  .Logements .logement-container .title-container h1 {
+    font-size: 22px;
+    padding-bottom: 5px;
+  }
+  .Logements .logement-container .title-container p {
+    font-size: 14px;
+  }
+  .Logements .logement-container .tag-container div {
+    font-size: 10px;
+    border-radius: 7px;
+    padding: 4px 15px;
+  }
+  .Logements .logement-container .stars-container img {
+    height: 18px;
+    margin-left: 0;
+    margin-right: 15px;
+  }
+  .Logements .logement-container .host > * {
+    margin-left: 10px;
+  }
+  .Logements .logement-container .host img {
+    height: 32px;
+    width: 32px;
+  }
+  .Logements .logement-container .host p {
+    font-size: 12px;
+  }
+  .Logements .collapse-container {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .Logements .collapse-container .Collapse {
+    margin: 0;
+    margin-bottom: 20px;
+  }
 }
