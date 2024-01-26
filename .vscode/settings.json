@@ -7,6 +7,6 @@
             "savePathReplacementPairs" : null
         }
     ],
-    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.generateMap": true,
     "liveSassCompile.settings.watchOnLaunch": true
 }
