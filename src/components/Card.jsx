@@ -5,7 +5,7 @@ function Card({ title, picture, id }) {
 	return (
 		<Link to={`logements/${id}`} className="card">
 			<img src={picture} alt="Logement" />
-			<div></div>
+			<div className="filter"></div>
 			<p>{title}</p>
 		</Link>
 	)

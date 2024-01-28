@@ -7,7 +7,6 @@ body {
 .card {
   width: 28%;
   aspect-ratio: 1/1;
-  background-color: #FF6060;
   display: flex;
   align-items: flex-end;
   margin: 50px 10px;

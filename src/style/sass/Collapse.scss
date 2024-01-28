@@ -18,6 +18,7 @@
         
         img{
             transition: transform 500ms;
+            cursor: pointer;
         }
 
         .anim{
@@ -57,6 +58,7 @@
             height: auto;
             padding: 0;
             color: $main-color;
+            font-weight: 400;
         }
     }
 

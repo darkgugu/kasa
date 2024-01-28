@@ -5,11 +5,6 @@ import '../style/css/Header.css'
 function Header() {
 	const { pathname } = useLocation()
 
-	if (pathname === '/') {
-		//document.getElementById('accueil').className = 'underlined'
-	} else {
-		//document.getElementById('propos').className = 'underlined'
-	}
 	return (
 		<nav>
 			<img src={logo} alt="logo" />
@@ -22,7 +17,7 @@ function Header() {
 					}
 					to="/"
 				>
-					Acceuil
+					Accueil
 				</Link>
 				<Link
 					style={
